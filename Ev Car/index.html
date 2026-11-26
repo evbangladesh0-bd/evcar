@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ইভি কার বাংলাদেশ: দাম, রেঞ্জ ও শোরুম | evcar.bd</title>
+<meta name="description" content="বাংলাদেশে পাওয়া ইলেকট্রিক গাড়ির দাম, রেঞ্জ ও ব্যাটারি তুলনা করুন। BYD, MG, Deepal, Tesla-সহ ব্র্যান্ডের শোরুমের ঠিকানা ও ফোন এক জায়গায়।">
+<link rel="canonical" href="https://evcar.bd/">
+<meta name="theme-color" content="#25D366">
+<meta property="og:type" content="website"><meta property="og:site_name" content="evcar.bd"><meta property="og:title" content="ইভি কার বাংলাদেশ: দাম, রেঞ্জ ও শোরুম | evcar.bd"><meta property="og:description" content="বাংলাদেশে পাওয়া ইলেকট্রিক গাড়ির দাম, রেঞ্জ ও ব্যাটারি তুলনা করুন। BYD, MG, Deepal, Tesla-সহ ব্র্যান্ডের শোরুমের ঠিকানা ও ফোন এক জায়গায়।"><meta property="og:url" content="https://evcar.bd/">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"evcar.bd","url":"https://evcar.bd/","inLanguage":"bn","description":"বাংলাদেশে পাওয়া ইলেকট্রিক গাড়ির দাম, রেঞ্জ ও ব্যাটারি তুলনা করুন। BYD, MG, Deepal, Tesla-সহ ব্র্যান্ডের শোরুমের ঠিকানা ও ফোন এক জায়গায়।"},{"@type":"Organization","name":"evcar.bd","url":"https://evcar.bd/","sameAs":["https://evbike.bd","https://evcharge.bd","https://evcharger.bd"]}]}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<style>
+body{font-family:system-ui,-apple-system,sans-serif}
+.car-sil{width:100%;height:80px;border:2px solid rgba(255,255,255,.3);border-radius:24px 24px 6px 6px;position:relative}
+.car-sil::before{content:'';position:absolute;top:40%;left:15%;right:15%;height:40%;border:1.5px solid rgba(255,255,255,.4);border-radius:8px 12px 2px 2px}
+.wheel{position:absolute;bottom:-8px;width:18px;height:18px;background:#111;border:2px solid #fff;border-radius:50%}
+</style>
+</head>
+<body class="bg-[#fafafa] text-gray-900">
+<header class="bg-white/80 backdrop-blur-xl border-b border-gray-100 sticky top-0 z-40">
+<div class="max-w-6xl mx-auto px-4 h-[64px] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="leading-none">
+<div class="flex items-baseline gap-[1px]"><span class="font-black text-[20px] tracking-tight">ev</span><span class="font-light text-[20px] tracking-tight">car</span><span class="font-black text-[20px] text-[#25D366]">.bd</span></div>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<a href="https://evcharge.bd" target="_blank" title="Find Station" class="px-3.5 h-9 rounded-full bg-black text-white text-[11px] font-semibold flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-[10px]"></i><span class="hidden sm:inline">Find Station</span></a>
+<div class="w-px h-5 bg-gray-200 mx-1 hidden md:block"></div>
+<a href="https://evbike.bd" target="_blank" title="EV Bike" class="px-3 h-9 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center gap-1 text-[11px] font-semibold border"><i class="fa-solid fa-motorcycle text-[11px]"></i><span class="hidden sm:inline">EV Bike</span></a>
+<a href="https://evcharger.bd" target="_blank" title="EV Charger" class="px-3 h-9 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center gap-1 text-[11px] font-semibold border"><i class="fa-solid fa-plug text-[11px]"></i><span class="hidden sm:inline">EV Charger</span></a>
+<button onclick="openAdmin()" class="w-9 h-9 rounded-full bg-[#e8f5e9] text-green-700 border border-green-200 hover:bg-green-100 flex items-center justify-center"><i class="fa-solid fa-shield-halved text-sm"></i></button>
+</div>
+</div>
+</header>
+
+<div class="max-w-6xl mx-auto px-4 py-6">
+<h1 class="font-black text-2xl mb-1">ইভি কার বাংলাদেশ: দাম, রেঞ্জ ও শোরুম</h1>
+<p class="text-sm text-gray-500 mb-4">বাংলাদেশে পাওয়া ইলেকট্রিক গাড়ির দাম, রেঞ্জ ও ব্যাটারি তুলনা করুন এবং কাছের শোরুমে সরাসরি কল বা WhatsApp করুন।</p>
+<div class="flex gap-2 overflow-x-auto pb-2 mb-4">
+<button onclick="filterBrand('BYD')" data-brand="BYD" class="brand-btn flex-shrink-0 px-5 h-11 rounded-full bg-black text-white text-sm font-semibold">BYD</button>
+<button onclick="filterBrand('MG')" data-brand="MG" class="brand-btn flex-shrink-0 px-5 h-11 rounded-full bg-white border text-sm font-semibold">MG</button>
+<button onclick="filterBrand('DEEPAL')" data-brand="DEEPAL" class="brand-btn flex-shrink-0 px-5 h-11 rounded-full bg-white border text-sm font-semibold">Deepal</button>
+<button onclick="filterBrand('TESLA')" data-brand="TESLA" class="brand-btn flex-shrink-0 px-5 h-11 rounded-full bg-white border text-sm font-semibold">Tesla</button>
+<button onclick="filterBrand('ALL')" data-brand="ALL" class="brand-btn flex-shrink-0 px-5 h-11 rounded-full bg-white border text-sm font-semibold">All</button>
+</div>
+
+<h2 class="font-bold text-lg mb-3">Models • <span id="modelBrand">BYD</span> <span id="modelCount" class="text-xs font-normal text-gray-500"></span></h2>
+<div id="models" class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8"></div>
+
+<h2 class="font-bold text-lg mb-3">Showrooms • <span id="showroomCount"></span></h2>
+<div id="showrooms" class="space-y-3"></div>
+</div>
+
+<section class="max-w-6xl mx-auto px-4 pb-6"><h2 class="font-bold text-lg mb-3">ইভি কার কেনার আগে যা জানা দরকার</h2><div class="space-y-2 max-w-3xl">
+<details open class="bg-white border rounded-2xl p-4"><summary class="font-semibold cursor-pointer">বাংলাদেশে ইভি কারের দাম কত?</summary><p class="text-sm text-gray-600 mt-2">আমাদের তালিকা অনুযায়ী আনুমানিক দাম প্রায় ১৯.৯ লাখ টাকা (MG Comet EV) থেকে ৯৫ লাখ টাকা (Tesla Model 3) পর্যন্ত। দাম বদলাতে পারে, তাই শোরুমে নিশ্চিত করে নিন।</p></details>
+<details class="bg-white border rounded-2xl p-4"><summary class="font-semibold cursor-pointer">একবার চার্জে কত কিলোমিটার চলে?</summary><p class="text-sm text-gray-600 mt-2">তালিকার ফুল-ইলেকট্রিক গাড়িগুলো কোম্পানির দাবি অনুযায়ী প্রায় ২৩০ থেকে ৫৭০ কিমি চলে। রাস্তা, আবহাওয়া ও চালানোর ধরনে বাস্তব রেঞ্জ কমবেশি হয়।</p></details>
+<details class="bg-white border rounded-2xl p-4"><summary class="font-semibold cursor-pointer">চার্জিং ও চার্জার কোথায় পাব?</summary><p class="text-sm text-gray-600 mt-2">সারা দেশের চার্জিং স্টেশন দেখুন <a class="underline font-semibold" href="https://evcharge.bd">evcharge.bd</a>-তে, আর বাসার জন্য চার্জার কিনুন <a class="underline font-semibold" href="https://evcharger.bd">evcharger.bd</a>-তে। দুই চাকার ইভি দেখতে চাইলে <a class="underline font-semibold" href="https://evbike.bd">evbike.bd</a>।</p></details>
+</div></section>
+<footer class="bg-white border-t mt-10 py-4 text-center text-xs text-gray-500"><div class="flex justify-center gap-4 mb-2 font-semibold"><a href="https://evbike.bd">EV Bike</a><a href="https://evcharge.bd">Charging Stations</a><a href="https://evcharger.bd">Chargers</a></div>© 2026 evcar.bd</footer>
+<a href="https://wa.me/8801715331303?text=Hello%20from%20evcar.bd" target="_blank" class="fixed bottom-5 right-5 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-xl z-50"><i class="fa-brands fa-whatsapp text-white text-[28px]"></i></a>
+
+<div id="detailModal" class="fixed inset-0 bg-black/60 hidden z-50 p-4 flex items-end md:items-center justify-center"><div class="bg-white rounded-[24px] w-full max-w-md max-h-[85vh] overflow-y-auto"><div id="detailContent" class="p-5"></div></div></div>
+
+<div id="adminModal" class="fixed inset-0 bg-black/70 hidden z-[60] p-4 flex items-start justify-center overflow-y-auto">
+<div class="bg-white rounded-[24px] w-full max-w-3xl my-8">
+<div class="p-5 border-b flex justify-between items-center"><h3 class="font-bold text-lg">Admin Panel - Full Control</h3><button onclick="closeAdmin()" class="w-8 h-8 bg-gray-100 rounded-full"><i class="fa-solid fa-xmark"></i></button></div>
+<div id="loginBox" class="p-5">
+<input id="email" class="w-full border rounded-xl px-4 py-2.5 mb-2 text-sm" placeholder="Admin email">
+<input id="pass" type="password" class="w-full border rounded-xl px-4 py-2.5 mb-3 text-sm" placeholder="Password">
+<button onclick="login()" class="w-full h-10 bg-black text-white rounded-full text-sm">Login</button>
+</div>
+<div id="adminBox" class="p-5 hidden">
+<div class="flex gap-2 mb-4 overflow-x-auto">
+<button onclick="showTab('images')" id="tab-images" class="flex-shrink-0 px-4 h-9 bg-black text-white rounded-full text-xs">🖼️ Images</button>
+<button onclick="showTab('prices')" id="tab-prices" class="flex-shrink-0 px-4 h-9 bg-gray-100 rounded-full text-xs">💰 Price & Details</button>
+<button onclick="showTab('showrooms')" id="tab-showrooms" class="flex-shrink-0 px-4 h-9 bg-gray-100 rounded-full text-xs">🏢 Showroom & Phone</button>
+<button onclick="showTab('add')" id="tab-add" class="flex-shrink-0 px-4 h-9 bg-gray-100 rounded-full text-xs">+ New Car</button>
+</div>
+
+<div id="panel-images">
+<div class="p-3 bg-blue-50 border border-blue-200 rounded-xl mb-3 text-xs">ছবি বেছে নিন, নিজে থেকে ছোট হয়ে আপলোড হবে, তারপর নিচে Save to Cloud চাপুন</div>
+<div id="uploadList" class="space-y-3"></div>
+</div>
+
+<div id="panel-prices" class="hidden">
+<div id="priceList" class="space-y-3"></div>
+</div>
+
+<div id="panel-showrooms" class="hidden">
+<div class="p-3 bg-green-50 border border-green-200 rounded-xl mb-3 text-xs">এখানে শোরুমের ফোন নাম্বার, WhatsApp নাম্বার, ঠিকানা আপডেট করতে পারবেন</div>
+<div id="showroomEditList" class="space-y-3"></div>
+<button onclick="addNewShowroom()" class="w-full mt-3 h-10 border-2 border-dashed rounded-xl text-sm">+ Add New Showroom</button>
+</div>
+
+<div id="panel-add" class="hidden">
+<div class="space-y-3">
+<input id="newName" class="w-full border rounded-xl px-4 py-2.5 text-sm" placeholder="Name - ex: Seal">
+<input id="newPrice" class="w-full border rounded-xl px-4 py-2.5 text-sm" placeholder="Price - ex: 79.9L">
+<input id="newRange" class="w-full border rounded-xl px-4 py-2.5 text-sm" placeholder="Range - ex: 570km">
+<input id="newBatt" class="w-full border rounded-xl px-4 py-2.5 text-sm" placeholder="Battery - ex: 82kWh">
+<input id="newCharge" class="w-full border rounded-xl px-4 py-2.5 text-sm" placeholder="Charge - ex: 30min">
+<input id="newSeats" class="w-full border rounded-xl px-4 py-2.5 text-sm" placeholder="Seats - ex: 5">
+<input id="newDesc" class="w-full border rounded-xl px-4 py-2.5 text-sm" placeholder="Description">
+<select id="newBrand" class="w-full border rounded-xl px-4 py-2.5 text-sm"><option value="BYD">BYD</option><option value="MG">MG</option><option value="DEEPAL">DEEPAL</option><option value="TESLA">TESLA</option></select>
+<input id="newImgLink" type="hidden"><input type="file" accept="image/*" onchange="pickNewImg(this)" class="w-full border rounded-xl px-3 py-2 text-sm"><div id="newImgNote" class="text-xs text-gray-500"></div>
+<button onclick="addNewCar()" class="w-full h-11 bg-black text-white rounded-full font-semibold text-sm">+ Add Car</button>
+</div>
+</div>
+
+<button onclick="saveToFirestore()" class="w-full mt-6 h-12 bg-[#25D366] text-white rounded-full font-bold text-sm"><i class="fa-solid fa-cloud-arrow-up mr-2"></i>Save to Cloud - সব জায়গায় আপডেট হবে</button>
+<button onclick="auth.signOut()" class="w-full mt-2 h-10 bg-gray-100 rounded-full text-sm">Logout</button>
+</div>
+</div>
+</div>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyC1YaxLLuQpF8o1sbnuZ-jgQisnpHYRnkE",
+  authDomain: "evcar-bd.firebaseapp.com",
+  projectId: "evcar-bd",
+  storageBucket: "evcar-bd.firebasestorage.app",
+  messagingSenderId: "126622497511",
+  appId: "1:126622497511:web:14868c11aab5696f218042"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const auth = firebase.auth();
+
+let defaultCars=[
+{name:"Seal",price:"79.9L",range:"570km",batt:"82kWh",charge:"30min",seats:"5",desc:"It is a premium all-electric (EV) sports sedan, known for outstanding performance and attractive design.",brand:"BYD",img:"",category:"Sedan",color:"from-emerald-600 to-green-800"},
+{name:"Seal 5",price:"48.5L",range:"120km EV + 1000km",batt:"18kWh",charge:"PHEV DM-i",seats:"5",desc:"It is a plug-in hybrid (PHEV) sedan powered by BYD's advanced DM-i technology.",brand:"BYD",img:"",category:"Sedan",color:"from-zinc-700 to-black"},
+{name:"Seal 6",price:"62L",range:"520km",batt:"71kWh",charge:"35min",seats:"5",desc:"It is a new fully electric (EV) sedan model with latest Blade Battery tech.",brand:"BYD",img:"",category:"Sedan",color:"from-slate-700 to-slate-900"},
+{name:"Atto 3",price:"56.5L",range:"420km",batt:"60kWh",charge:"45min",seats:"5",desc:"One of BYD's most popular and first compact all-electric (EV) SUVs in Bangladesh.",brand:"BYD",img:"",category:"SUV",color:"from-indigo-700 to-purple-900"},
+{name:"Sealion 5",price:"58L",range:"110km EV + 1000km",batt:"18kWh",charge:"PHEV",seats:"5",desc:"A mid-size plug-in hybrid (PHEV) SUV with efficient hybrid system.",brand:"BYD",img:"",category:"SUV",color:"from-sky-700 to-blue-900"},
+{name:"Sealion 6 (AWD)",price:"72L",range:"150km EV + 1000km",batt:"26kWh",charge:"AWD PHEV",seats:"5",desc:"A premium plug-in hybrid (PHEV) SUV with All-Wheel Drive (AWD) technology, great for families.",brand:"BYD",img:"",category:"SUV",color:"from-orange-500 to-red-600"},
+{name:"ZS EV",price:"52L",range:"320km",batt:"51kWh",charge:"60min",seats:"5",desc:"MG ZS EV - British EV SUV",brand:"MG",img:"",category:"SUV",color:"from-red-600 to-red-800"},
+{name:"Comet EV",price:"19.9L",range:"230km",batt:"17kWh",charge:"5h",seats:"4",desc:"MG Comet - City EV",brand:"MG",img:"",category:"Hatchback",color:"from-orange-500 to-red-600"},
+{name:"S07",price:"62L",range:"520km",batt:"79kWh",charge:"40min",seats:"5",desc:"Deepal S07 flagship SUV",brand:"DEEPAL",img:"",category:"SUV",color:"from-gray-700 to-gray-900"},
+{name:"Model 3",price:"95L",range:"550km",batt:"82kWh",charge:"30min",seats:"5",desc:"Tesla Model 3",brand:"TESLA",img:"",category:"Sedan",color:"from-zinc-800 to-black"},
+];
+
+let defaultShowrooms=[
+{brand:"BYD",name:"BYD Flagship Tejgaon",addr:"37 Shaheed Tajuddin Ahmed Ave, Tejgaon, Dhaka-1208",phone:"01313056433"},
+{brand:"BYD",name:"BYD Paltan Merchant",addr:"178 Shahid Syed Nazrul Islam Sarani, Bijoynagar, Dhaka-1000",phone:"01313056434"},
+{brand:"BYD",name:"BYD Uttara Noor Autos",addr:"House 08, Road 9C, Sector 15, Uttara, Dhaka-1230",phone:"01313056435"},
+{brand:"BYD",name:"BYD Madani Ave Otto Fix",addr:"100ft Madani Ave, Vatara, Dhaka",phone:"01313056436"},
+{brand:"BYD",name:"BYD Tejgaon Beg Autos",addr:"Aristo Tower, 239 Bir Uttam Mir Shawkat Sarak, Tejgaon",phone:"01313056437"},
+{brand:"BYD",name:"BYD Chattogram Autotec",addr:"201/206 Nasirabad Industrial Area, Chattogram",phone:"01313056438"},
+{brand:"MG",name:"MG Dhaka Flagship",addr:"215 Bir Uttam Mir Shawkat Sarak, Tejgaon I/A, Dhaka-1208",phone:"01332564281"},
+{brand:"MG",name:"MG Chattogram",addr:"Shahid Abdul Halim Rd, Chattogram",phone:"01332564282"},
+{brand:"DEEPAL",name:"Deepal Rangs Babylonia",addr:"2nd Floor, 246 Tejgaon I/A, Dhaka",phone:"0961316697"},
+];
+
+let cars = JSON.parse(localStorage.getItem('evcar_final') || 'null') || defaultCars;
+let showrooms = JSON.parse(localStorage.getItem('evcar_showrooms') || 'null') || defaultShowrooms;
+let activeBrand='BYD';
+
+// Load from Firestore
+db.collection("evcars").doc("cars_data").get().then(doc=>{
+  if(doc.exists){
+    if(doc.data().list) {cars=doc.data().list; localStorage.setItem('evcar_final', JSON.stringify(cars));}
+    if(doc.data().showrooms) {showrooms=doc.data().showrooms; localStorage.setItem('evcar_showrooms', JSON.stringify(showrooms));}
+    render();
+  }
+});
+db.collection("evcars").doc("cars_data").onSnapshot(doc=>{
+  if(doc.exists){
+    if(doc.data().list) {cars=doc.data().list; localStorage.setItem('evcar_final', JSON.stringify(cars));}
+    if(doc.data().showrooms) {showrooms=doc.data().showrooms; localStorage.setItem('evcar_showrooms', JSON.stringify(showrooms));}
+    render();
+  }
+});
+
+function render(){
+const m=document.getElementById('models'); m.innerHTML='';
+const filteredCars = activeBrand==='ALL'?cars:cars.filter(c=>c.brand===activeBrand);
+document.getElementById('modelBrand').innerText=activeBrand;
+document.getElementById('modelCount').innerText='('+filteredCars.length+')';
+filteredCars.forEach(car=>{
+m.innerHTML+=`<div onclick="openDetail('${car.name.replace(/'/g, "\\'")}')" class="bg-white rounded-[20px] border border-gray-100 overflow-hidden cursor-pointer hover:shadow-lg transition-all">
+<div class="h-32 bg-white border-b border-gray-100 relative">
+${car.img?`<img src="${car.img}" class="w-full h-full object-cover" onerror="this.style.display='none'">`:''}
+<div class="absolute inset-0 p-3 flex flex-col justify-between ${car.img?'bg-black/20':''}">
+<div class="flex justify-between text-white text-[10px]"><span class="bg-black/40 px-2 py-1 rounded-full">${car.brand} • ${car.category}</span><span class="bg-white/20 px-2 py-1 rounded-full">${car.range}</span></div>
+${!car.img?`<div class="car-sil"><div class="wheel left-6"></div><div class="wheel right-6"></div></div>`:''}
+</div>
+</div>
+<div class="p-3">
+<div class="flex justify-between items-start"><div class="flex-1"><div class="font-bold text-[15px]">${car.brand} ${car.name}</div><div class="text-xs text-gray-500 mt-0.5">৳ ${car.price} • ${car.batt}</div><div class="text-[11px] text-gray-600 mt-2 line-clamp-2">${car.desc}</div></div><div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center ml-2"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></div></div>
+</div>
+</div>`;
+});
+const s=document.getElementById('showrooms'); s.innerHTML='';
+const filteredShow = activeBrand==='ALL'?showrooms:showrooms.filter(sh=>sh.brand===activeBrand);
+document.getElementById('showroomCount').innerText=filteredShow.length+' showrooms';
+filteredShow.forEach(sh=>{
+const wa=`https://wa.me/88${sh.phone.replace(/\D/g,'')}?text=${encodeURIComponent('Hello found on evcar.bd - '+sh.name)}`;
+const map=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sh.addr)}`;
+s.innerHTML+=`<div class="bg-white rounded-2xl border p-4">
+<div class="flex justify-between gap-2"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-[10px] px-1.5 py-0.5 bg-black text-white rounded">${sh.brand}</span><span class="font-semibold text-sm">${sh.name}</span></div><div class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot mr-1"></i>${sh.addr}</div><div class="text-xs font-bold mt-1"><i class="fa-solid fa-phone mr-1"></i>${sh.phone}</div></div><a href="${map}" target="_blank" class="text-xs border px-2.5 py-1 rounded-full h-fit"><i class="fa-solid fa-diamond-turn-right mr-1"></i>Direction</a></div>
+<div class="grid grid-cols-2 gap-2 mt-3">
+<a href="tel:${sh.phone}" class="h-10 bg-black text-white rounded-full flex items-center justify-center gap-2 text-sm"><i class="fa-solid fa-phone"></i>Call</a>
+<a href="${wa}" target="_blank" class="h-10 bg-[#25D366] text-white rounded-full flex items-center justify-center gap-2 text-sm"><i class="fa-brands fa-whatsapp text-lg"></i>WhatsApp</a>
+</div></div>`;
+});
+document.querySelectorAll('.brand-btn').forEach(b=>b.className='brand-btn flex-shrink-0 px-5 h-11 rounded-full bg-white border text-sm font-semibold');
+document.querySelector(`[data-brand="${activeBrand}"]`)?.classList.add('!bg-black','!text-white');
+}
+
+function filterBrand(b){activeBrand=b;render();}
+function openDetail(name){
+const car=cars.find(c=>c.name===name); if(!car) return;
+const rel=showrooms.filter(s=>s.brand===car.brand);
+let html=`<div class="flex justify-between items-start mb-4"><div><h3 class="text-xl font-bold">${car.brand} ${car.name}</h3><p class="text-sm text-gray-500">৳ ${car.price} • ${car.range}</p></div><button onclick="closeModal()" class="w-8 h-8 bg-gray-100 rounded-full"><i class="fa-solid fa-xmark"></i></button></div>
+${car.img?`<img src="${car.img}" class="w-full h-44 object-cover rounded-2xl mb-4 border">`:`<div class="h-36 bg-white border rounded-2xl mb-4 flex items-center justify-center"><div class="car-sil w-40 border-gray-200"><div class="wheel left-6"></div><div class="wheel right-6"></div></div></div>`}
+<div class="bg-gray-50 rounded-xl p-3 mb-4"><div class="text-xs text-gray-500">Description</div><p class="text-sm">${car.desc}</p></div>
+<div class="grid grid-cols-3 gap-2 mb-4"><div class="bg-gray-50 rounded-xl p-2 text-center"><div class="text-[10px] text-gray-500">Battery</div><div class="font-semibold text-sm">${car.batt}</div></div><div class="bg-gray-50 rounded-xl p-2 text-center"><div class="text-[10px] text-gray-500">Range</div><div class="font-semibold text-sm">${car.range}</div></div><div class="bg-gray-50 rounded-xl p-2 text-center"><div class="text-[10px] text-gray-500">Charge</div><div class="font-semibold text-sm">${car.charge}</div></div></div>`;
+rel.forEach(sh=>{
+const wa=`https://wa.me/88${sh.phone.replace(/\D/g,'')}?text=${encodeURIComponent('Hello found on evcar.bd - '+car.name+' at '+sh.name)}`;
+const map=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sh.addr)}`;
+html+=`<div class="border rounded-xl p-3 mb-2"><div class="flex justify-between gap-2"><div class="flex-1"><div class="font-semibold text-sm">${sh.name}</div><div class="text-xs text-gray-500 mt-1">${sh.addr}</div><div class="text-xs font-bold mt-1">${sh.phone}</div></div><a href="${map}" target="_blank" class="w-8 h-8 border rounded-full flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-diamond-turn-right text-[12px]"></i></a></div><div class="grid grid-cols-2 gap-2 mt-2"><a href="tel:${sh.phone}" class="h-8 bg-black text-white rounded-full flex items-center justify-center gap-1 text-xs"><i class="fa-solid fa-phone text-[10px]"></i>Call</a><a href="${wa}" target="_blank" class="h-8 bg-[#25D366] text-white rounded-full flex items-center justify-center gap-1 text-xs"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></div></div>`;
+});
+html+=`<button onclick="closeModal()" class="w-full mt-3 h-10 bg-gray-100 rounded-full text-sm">Close</button>`;
+document.getElementById('detailContent').innerHTML=html;document.getElementById('detailModal').classList.remove('hidden');
+}
+function closeModal(){document.getElementById('detailModal').classList.add('hidden');}
+function openAdmin(){document.getElementById('adminModal').classList.remove('hidden');}
+function closeAdmin(){document.getElementById('adminModal').classList.add('hidden');}
+auth.onAuthStateChanged(u=>{const on=!!u;document.getElementById('loginBox').classList.toggle('hidden',on);document.getElementById('adminBox').classList.toggle('hidden',!on);if(on)renderAdmin();});
+function login(){auth.signInWithEmailAndPassword(document.getElementById('email').value.trim(),document.getElementById('pass').value).catch(e=>alert('Login failed: '+e.message));}
+async function toImageBlob(file,max=1000){
+const bmp=await createImageBitmap(file);const r=Math.min(1,max/Math.max(bmp.width,bmp.height));
+const c=document.createElement('canvas');c.width=Math.round(bmp.width*r);c.height=Math.round(bmp.height*r);
+c.getContext('2d').drawImage(bmp,0,0,c.width,c.height);
+return await new Promise(res=>c.toBlob(res,'image/webp',.82));
+}
+async function uploadFile(file){
+const u=auth.currentUser; if(!u) throw new Error('আগে Login করুন');
+const blob=await toImageBlob(file);
+const r=await fetch('/api/upload',{method:'POST',headers:{'Authorization':'Bearer '+await u.getIdToken(),'Content-Type':blob.type},body:blob});
+const j=await r.json(); if(!r.ok) throw new Error(j.error||'Upload failed'); return j.url;
+}
+async function pickImg(i,input){ if(!input.files[0]) return; try{ cars[i].img=await uploadFile(input.files[0]); renderAdmin(); render(); alert('ছবি আপলোড হয়েছে - এখন Save to Cloud করুন'); }catch(e){ alert('Error: '+e.message); } }
+async function pickNewImg(input){ if(!input.files[0]) return; const n=document.getElementById('newImgNote'); n.innerText='আপলোড হচ্ছে...'; try{ document.getElementById('newImgLink').value=await uploadFile(input.files[0]); n.innerText='✅ ছবি আপলোড হয়েছে'; }catch(e){ n.innerText='Error: '+e.message; } }
+function showTab(t){
+['images','prices','showrooms','add'].forEach(x=>{document.getElementById('panel-'+x).classList.add('hidden');document.getElementById('tab-'+x).className='flex-shrink-0 px-4 h-9 bg-gray-100 rounded-full text-xs';});
+document.getElementById('panel-'+t).classList.remove('hidden');document.getElementById('tab-'+t).className='flex-shrink-0 px-4 h-9 bg-black text-white rounded-full text-xs';
+if(t==='prices')renderPriceList();
+if(t==='showrooms')renderShowroomEdit();
+if(t==='images')renderAdmin();
+}
+function renderAdmin(){
+const div=document.getElementById('uploadList'); div.innerHTML='';
+cars.forEach((car,i)=>{
+div.innerHTML+=`<div class="border rounded-xl p-3"><div class="flex gap-2 items-center mb-2"><div class="w-12 h-10 bg-gray-100 rounded overflow-hidden">${car.img?`<img src="${car.img}" class="w-full h-full object-cover">`:''}</div><div class="flex-1"><div class="font-bold text-sm">${car.brand} ${car.name}</div><div class="text-xs text-gray-500">${car.price} • ${car.range}</div></div></div><input type="file" accept="image/*" onchange="pickImg(${i},this)" class="w-full border rounded-full px-3 py-2 text-xs"></div>`;
+});
+}
+function renderPriceList(){
+const div=document.getElementById('priceList'); div.innerHTML='';
+cars.forEach((car,i)=>{
+div.innerHTML+=`<div class="border rounded-xl p-3"><div class="font-bold text-sm mb-2">${car.brand} ${car.name}</div><div class="grid grid-cols-2 gap-2">
+<input onchange="updateCar(${i},'price',this.value)" value="${car.price}" class="border rounded-lg px-2 py-1.5 text-xs" placeholder="Price">
+<input onchange="updateCar(${i},'range',this.value)" value="${car.range}" class="border rounded-lg px-2 py-1.5 text-xs" placeholder="Range">
+<input onchange="updateCar(${i},'batt',this.value)" value="${car.batt}" class="border rounded-lg px-2 py-1.5 text-xs" placeholder="Battery">
+<input onchange="updateCar(${i},'charge',this.value)" value="${car.charge}" class="border rounded-lg px-2 py-1.5 text-xs" placeholder="Charge">
+<input onchange="updateCar(${i},'seats',this.value)" value="${car.seats}" class="border rounded-lg px-2 py-1.5 text-xs" placeholder="Seats">
+<input onchange="updateCar(${i},'desc',this.value)" value="${car.desc}" class="border rounded-lg px-2 py-1.5 text-xs col-span-2" placeholder="Description">
+</div><button onclick="deleteCar(${i})" class="mt-2 text-xs text-red-500">Delete</button></div>`;
+});
+}
+function renderShowroomEdit(){
+const div=document.getElementById('showroomEditList'); div.innerHTML='';
+showrooms.forEach((sh,i)=>{
+div.innerHTML+=`<div class="border rounded-xl p-3"><div class="font-bold text-sm mb-2">${sh.brand} - ${sh.name}</div>
+<input onchange="updateShowroom(${i},'name',this.value)" value="${sh.name}" class="w-full border rounded-lg px-2 py-1.5 text-xs mb-1" placeholder="Showroom Name">
+<input onchange="updateShowroom(${i},'addr',this.value)" value="${sh.addr}" class="w-full border rounded-lg px-2 py-1.5 text-xs mb-1" placeholder="Address">
+<div class="grid grid-cols-2 gap-1"><input onchange="updateShowroom(${i},'phone',this.value)" value="${sh.phone}" class="border rounded-lg px-2 py-1.5 text-xs" placeholder="Phone"><select onchange="updateShowroom(${i},'brand',this.value)" class="border rounded-lg px-2 py-1.5 text-xs"><option ${sh.brand==='BYD'?'selected':''}>BYD</option><option ${sh.brand==='MG'?'selected':''}>MG</option><option ${sh.brand==='DEEPAL'?'selected':''}>DEEPAL</option><option ${sh.brand==='TESLA'?'selected':''}>TESLA</option></select></div>
+<button onclick="deleteShowroom(${i})" class="mt-2 text-xs text-red-500">Delete Showroom</button>
+</div>`;
+});
+}
+function updateImg(i,val){cars[i].img=val.replace('i.ibb.co.com','i.ibb.co');}
+function updateCar(i,f,v){cars[i][f]=v;}
+function updateShowroom(i,f,v){showrooms[i][f]=v;}
+function deleteCar(i){if(confirm('Delete '+cars[i].name+'?')){cars.splice(i,1);renderAdmin();renderPriceList();render();}}
+function deleteShowroom(i){if(confirm('Delete '+showrooms[i].name+'?')){showrooms.splice(i,1);renderShowroomEdit();render();}}
+function addNewCar(){
+let name=document.getElementById('newName').value.trim();
+let price=document.getElementById('newPrice').value.trim();
+if(!name||!price) return alert('Name Price দিন');
+cars.push({name:name,price:price,range:document.getElementById('newRange').value, batt:document.getElementById('newBatt').value, charge:document.getElementById('newCharge').value, seats:document.getElementById('newSeats').value, desc:document.getElementById('newDesc').value, brand:document.getElementById('newBrand').value, img:document.getElementById('newImgLink').value.replace('i.ibb.co.com','i.ibb.co'), category:"SUV", color:"from-gray-700 to-black"});
+renderAdmin(); render(); alert('Added - এখন Save to Cloud করুন');
+}
+function addNewShowroom(){
+showrooms.push({brand:"BYD",name:"New Showroom",addr:"Address",phone:"01XXXXXXXXX"});
+renderShowroomEdit(); render();
+}
+function saveToFirestore(){
+if(!auth.currentUser) return alert('আগে Login করুন');
+localStorage.setItem('evcar_final', JSON.stringify(cars));
+localStorage.setItem('evcar_showrooms', JSON.stringify(showrooms));
+db.collection("evcars").doc("cars_data").set({list:cars, showrooms:showrooms, updated: firebase.firestore.FieldValue.serverTimestamp()}).then(()=>{
+alert('✅ Cloud এ Save হলো! গাড়ি, প্রাইস, ফোন নাম্বার সব আপডেট হলো');
+render();
+}).catch(e=>alert('Error: '+e.message+' Rules check করুন'));
+}
+render();
+</script>
+</body>
+</html>
